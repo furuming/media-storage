@@ -10,6 +10,7 @@ import (
 
 type Config struct {
 	StorageList []string
+	Port        string
 }
 
 func New() *Config {
@@ -32,6 +33,7 @@ func New() *Config {
 
 	return &Config{
 		StorageList: myArray,
+		Port:        ":" + os.Getenv("APP_PORT"),
 	}
 
 }

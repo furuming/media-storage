@@ -11,5 +11,5 @@ func main() {
 
 	router := router.New(env)
 
-	router.Run()
+	router.Run(":8000")
 }
